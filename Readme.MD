@@ -1,6 +1,7 @@
 ## Deploying a Wine Prediction Model with FastAPI and Docker
 
 This project deploys a webserver hosts a machine learning predictive model trained on the wine dataset using FastAPI and Docker. It builds and integrates code with Docker to making it portable and easy to deploy. The goal of this project is to deployment of a trained machine learning model using FastAPI and Docker container, hence as such project uses a simpler Random Forest classifier using standard scaler for scaling the features. The Random Forest classifier has 10 trees. Scikit-learn model is used rather than a TensorFlow or PyTorch model to avoid long build times as deep learning framework models have much longer build times when a Docker image is being build due to their size. 
+
 **Note :** This project uses Docker 3.6.0 on Windows 10 Home  Edition 21H2 version (build 19044.2006) because the latest version of Docker would not start or work. If you are a windows user experiencing issues with latest Docker (especially with Docker Dameon not working or related pipeline errors, just download and install Docker 3.6.0). Also make sure that you are using WSL2 backend if you are using Windows (WSL 2 backend is installed with Docker 3.6.0 and the latest version of Docker)
 
 ## Why Deep Learning Frameworks Are Not Used?
