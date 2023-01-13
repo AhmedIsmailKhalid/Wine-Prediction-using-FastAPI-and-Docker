@@ -13,7 +13,7 @@ The FROM instruction allows selecting a pre-existing image as the base for the n
 ## Building The Image(s)
 This project has two images : one for serving predictions single data point at a time and one for serving batch predictions. In order to build the images make sure that the directory is set to the respective folders, i.e. `no-batch` and `with-batch`. Then use the following template to run build the image
 ```
-docker build image-name:image-tag
+docker build image-name:image-tag .
 ```
 Replace the `image-name` with the desired name of the image and `image-tag` with the desired tag for the image. 
 
@@ -21,7 +21,7 @@ Replace the `image-name` with the desired name of the image and `image-tag` with
 ## Run the container(s)
 Once the image(s) has been built next step is to run the image. This can be done using the following command :
 ```
-docker run --rm -p image-name:image-tag
+docker run --rm -p image-name:image-tag .
 ```
 Once the container is running,  go to  [localhost:80](http://localhost:80) to see the if the server is working or not. If it is running a message will be displayed
 
