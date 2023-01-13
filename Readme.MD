@@ -21,7 +21,7 @@ Replace the `image-name` with the desired name of the image and `image-tag` with
 ## Run the container(s)
 Once the image(s) has been built next step is to run the image. This can be done using the following command :
 ```
-docker run --rm -p image-name:image-tag .
+docker run --rm -p 80:80 image-name:image-tag
 ```
 Once the container is running,  go to  [localhost:80](http://localhost:80) to see the if the server is working or not. If it is running a message will be displayed
 
